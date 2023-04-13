@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Input Data</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="room">
+      <h2>Form Input Data</h2><br>
+      <form>
+        <label for="firstname">Nama Depan:</label>
+        <input type="text" id="firstname" name="firstname" /><br /><br />
+
+        <label for="lastname">Nama Belakang:</label>
+        <input type="text" id="lastname" name="lastname" /><br /><br />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Perempuan</label><br /><br />
+
+        <label for="address">Alamat:</label>
+        <textarea id="address" name="address"></textarea><br /><br />
+
+        <label for="storage">Pilihan Storage:</label>
+
+        <select id="storage" name="storage">
+          <option value="local">Local Storage</option>
+          <option value="session">Session Storage</option>
+          <option value="cookie">Cookie</option></select
+        ><br /><br />
+
+        <button type="button" onclick="addData()">Tambah Data</button>
+        <button type="button" onclick="showData()">Tampilkan Data</button>
+      </form>
+
+      <div id="data-container"></div>
+    </div>
+
+    
+  </body>
+</html>
